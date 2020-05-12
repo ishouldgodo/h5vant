@@ -8,6 +8,8 @@
         <van-dialog :beforeClose="beforeClose" v-model="show" title="授权密码" show-cancel-button>
             <van-field class="passWord-input-demo" v-model="passWordAuthon" placeholder="请输入授权密码" />
         </van-dialog>
+
+        <list-pic></list-pic>
     </div>
 </template>
 
@@ -21,7 +23,9 @@ export default {
         }
     },
     components: {
-        "mask-tip-authon": () => import("../components/maskTipAuthon")
+        "mask-tip-authon": () => import("../components/maskTipAuthon"),
+        "list-pic": () => import("../components/listPic"),
+
     },
 
     methods: {
