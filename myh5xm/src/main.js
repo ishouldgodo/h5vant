@@ -22,6 +22,27 @@ Vue.use(Dialog);
 import { Field } from "vant";
 Vue.use(Field);
 
+import { RadioGroup, Radio } from "vant";
+Vue.use(Radio);
+Vue.use(RadioGroup);
+
+import { Checkbox, CheckboxGroup } from "vant";
+
+Vue.use(Checkbox);
+Vue.use(CheckboxGroup);
+import { Icon } from "vant";
+
+import { Search } from "vant";
+Vue.use(Search);
+Vue.use(Icon);
+
+import { Grid, GridItem } from "vant";
+Vue.use(Grid);
+Vue.use(GridItem);
+
+import { Image as VanImage } from "vant";
+Vue.use(VanImage);
+
 new Vue({
   router,
   store,
