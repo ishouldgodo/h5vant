@@ -30,10 +30,11 @@ import { Checkbox, CheckboxGroup } from "vant";
 
 Vue.use(Checkbox);
 Vue.use(CheckboxGroup);
-import { Icon } from "vant";
 
 import { Search } from "vant";
 Vue.use(Search);
+
+import { Icon } from "vant";
 Vue.use(Icon);
 
 import { Grid, GridItem } from "vant";
@@ -43,6 +44,8 @@ Vue.use(GridItem);
 import { Image as VanImage } from "vant";
 Vue.use(VanImage);
 
+import { Overlay } from "vant";
+Vue.use(Overlay);
 new Vue({
   router,
   store,

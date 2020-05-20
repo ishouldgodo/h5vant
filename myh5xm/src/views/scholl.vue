@@ -10,6 +10,11 @@
         </van-dialog>
 
         <list-pic></list-pic>
+
+        <!-- 文字弹出层 -->
+        <van-button type="primary" @click="openDecMask">文字弹出层</van-button>
+
+        <dec-mask :showflag="showflag" @close="hnadlerClose"></dec-mask>
     </div>
 </template>
 
@@ -20,11 +25,14 @@ export default {
         return {
             show: false,
             passWordAuthon: "",
+            maskFlag: false,
+            showflag: false,
         }
     },
     components: {
         "mask-tip-authon": () => import("../components/maskTipAuthon"),
         "list-pic": () => import("../components/listPic"),
+        'dec-mask': () => import('../components/dec-Mask')
 
     },
 
@@ -41,6 +49,14 @@ export default {
                 console.log("取消");
                 done() //关闭弹框
             }
+        },
+
+        openDecMask() {
+            this.showflag = true;
+
+        },
+        hnadlerClose() {
+            this.showflag = false;
         }
     },
 }
