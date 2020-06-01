@@ -36,3 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 控制右侧区域
 width: calc(100% - 51px);
 overflow: hidden;
+
+#### 封装全局组件了。参考地址https://www.cnblogs.com/ishoulgodo/p/13028222.html
+
+#### 封装全局方法, 通过 this.XXX()访问 https://www.cnblogs.com/ishoulgodo/p/13028354.html

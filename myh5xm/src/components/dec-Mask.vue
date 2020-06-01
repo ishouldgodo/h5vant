@@ -71,7 +71,6 @@ export default {
         position: relative;
     }
 }
-
 // 控制按钮的方向
 .close-icon {
     color: #fff;

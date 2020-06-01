@@ -15,6 +15,8 @@
         <van-button type="primary" @click="openDecMask">文字弹出层</van-button>
 
         <dec-mask :showflag="showflag" @close="hnadlerClose"></dec-mask>
+
+        <com></com>
     </div>
 </template>
 
@@ -35,7 +37,34 @@ export default {
         'dec-mask': () => import('../components/dec-Mask')
 
     },
+    created() {
+        this.say();
 
+        //Array.from()方法就是将一个[类数组对象][或者可遍历对象]转换成一个[真正的数组]
+
+        //那么什么是类数组对象呢？所谓类数组对象，最基本的要求就是具有length属性的对象。
+
+
+        // 将对象变为数组
+        let arrayLike = {
+
+        }
+        let newarr = [];
+        for (let i in arrayLike) {
+            newarr.push(arrayLike[i])
+        }
+        console.log(newarr);
+
+
+
+
+
+
+
+
+
+
+    },
     methods: {
         openMask() {
             this.show = true;//打开按钮

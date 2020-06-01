@@ -44,6 +44,12 @@ Vue.use(GridItem);
 import { Image as VanImage } from "vant";
 Vue.use(VanImage);
 
+import com from "./components";
+Vue.use(com);
+
+import way from "./utils";
+Vue.use(way);
+
 import { Overlay } from "vant";
 Vue.use(Overlay);
 new Vue({
